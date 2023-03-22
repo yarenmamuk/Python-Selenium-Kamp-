@@ -1,0 +1,30 @@
+HTML:
+Hiper Metin İşaretleme Dili (HTML, İngilizce HyperText Markup Language kelimelerinin baş harflerinin kısaltılmasıdır) web sayfalarını oluşturmak için kullanılan standart metin işaretleme dilidir. Dilin son sürümü HTML5'tir.
+
+HTML, bir programlama dili olarak tanımlanamaz. Zira HTML kodlarıyla kendi başına çalışan bir program yazılamaz. Ancak bu dili yorumlayabilen programlar aracılığıyla çalışabilen programlar yazılabilir. Programlama dili denilememesinin nedeni tam olarak budur. Temel gereği yazı, görüntü, video gibi değişik verileri ve bunları içeren sayfaları birbirine basitçe bağlamak, buna ek olarak söz konusu sayfaların web tarayıcısı yazılımları tarafından düzgün olarak görüntülenmesi için gerekli kuralları belirlemektir. HTML kodunu web tarayıcıları okur, yorumlar ve görsel hale dönüştürürler, dolayısıyla aynı HTML kodunun farklı tarayıcılarda farklı sonuç vermesi olasıdır. CSS ve JavaScript ile beraber kullanıldığında HTML vasıtasıyla görsel ve dinamik web siteleri yaratılabilir.
+
+Küçüktür ve büyüktür işaretleri arasına yazılan HTML komutları kullanılarak yazılır (ör: <html>). İşaretlenen metnin başını ve sonunu belirtmek için çoğunlukla çift olarak kullanılırlar (Örnek: <h1>Selam</h1>) ancak, işaretlemek yerine metnin bir yerine bir işaret konacaksa tek olarak da kullanılabilirler (Ör: ).
+
+HTML LOCATORS
+Locators(Konumlandırıcı), Selenium IDE’ye hangi web tabanlı objeler üzerinde çalışması gerektiğini söyleyen bir komuttur. Doğru elementin tanımlanması, otomasyon oluşturmanın ön koşuludur. Site üzerindeki bir elemente örneğin giriş butonuna selenium ile tıklama işlemi yaptırmak istediğimizde bu işlemi locator’lar aracılığıyla yaparız. Selenium ile geliştirmek istediğimiz test otomasyonlarında locator’ları kullanarak ilgili alanlara veri gönderebilir, tıklama işlemi yaptırabilir, var olan içeriği temizleyebiliriz. Bunlar ‘By’ objesi olarak oluşturulur. En yaygın locator çeşitleri;
+
+ID
+Name
+ClassName
+TagName
+LinkText
+CssSelector
+XPath
+Web sitelerinde tagname’ler bulunur. Bu tagname’lerin sahip olduğu stil, name, id gibi attribute’ler vardır. Selenium’un anlayacağı şekilde nesneleri web elementlere çevirirken ilk önce id’si ve name’i var mı diye bakılır yok ise CssSelector ve Xpath ile nesneyi bulmaya çalışırız.
+
+SELENIUM DA AKSİYONLAR
+click() : Bir elemente tıklamak için kullanılır.
+Maximize_window() : Tam ekran yapmak için  kullanılır.
+clear() : Metin kutusundaki mevcut metni silmek için kullanılır.
+pause() : Testi duraklatır.
+get():Verilen URL ye gitmek için kullanılır
+find_element():Belirtilen (parantezin içine yazılan) özelliklere göre bir elementi bulur. find_elements() ise class şeklinde verilen ögeyi bulur.
+quit():tarayıcıyı kapatır.
+forward():Sonraki sayfaya geçer.
+submit():form göndermek için kullanılır.
+scroll():sayfayı aşağı yukarı kaydırmak için kullanılır
